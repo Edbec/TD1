@@ -10,7 +10,8 @@ Meteo :
         - Choisir le format d'affichage des données (ex : Température en C° ou en F)               
         - Multilangue : pouvoir choisir sa langue                                 
         - Cibler la ville où l'on se trouve en cherchant la ville au client                        
-        - Cibler la ville où l'on se trouve par géolocalisation                           
+        - Cibler la ville où l'on se trouve par géolocalisation                        
+        
 2. - Git hub : *GET + GET /user/repos + GET /repos/:owner/:repo + GET /users/:username/repos + GET /orgs/:org/repos + GET /repositories + GET /repos/:owner/:repo/contributors + GET /repos/:owner/:repo/languages + GET /repos/:owner/:repo/teams + GET /repos/:owner/:repo/branches + GET /repos/:owner/:repo/branches/:branch
 
     *POST
