@@ -1,16 +1,16 @@
 # TD1
 1. Git hub :                                                       
         - Authentification                                   
-        - Mettre en place une pagination                                
-        - Imposer un nombre limiter de requêtes pour la page active                 
-        - Afficher l'heure en fonction de la position de l'utilisateur                   
+        - Système de pagination                                
+        - Limitation de requêtes pour la page active                 
+        - Fuseaux horaires actifs en fonction de la position de l'utilisateur                   
         - Gestion des erreurs                     
-Meteo :                                                                          
-        - Récupérer la température minimum et maximum actuelle                       
-        - Choisir le format d'affichage des données (ex : Température en C° ou en F)               
-        - Multilangue : pouvoir choisir sa langue                                 
-        - Cibler la ville où l'on se trouve en cherchant la ville au client                        
-        - Cibler la ville où l'on se trouve par géolocalisation                        
+   Meteo :                                                                          
+        - Récupérer les températures                      
+        - Choix du format d'affichage des données              
+        - Choix de la langue                                 
+        - Ciblage de ville par recherche                        
+        - Ciblage de ville par géolocalisation                       
         
 2. - Git hub : *GET + GET /user/repos + GET /repos/:owner/:repo + GET /users/:username/repos + GET /orgs/:org/repos + GET /repositories + GET /repos/:owner/:repo/contributors + GET /repos/:owner/:repo/languages + GET /repos/:owner/:repo/teams + GET /repos/:owner/:repo/branches + GET /repos/:owner/:repo/branches/:branch
 
@@ -21,9 +21,10 @@ Meteo :
     *Authentifié (token)
         + $ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com (à envoyer dans le header)
         + $ curl https://api.github.com/?access_token=OAUTH-TOKEN ( à envoyer en tant que paramètres)
+        
 3. Test des requêtes avec Postman, dans les deux cas on utilise la commande HTTP GET :
 
-Test de la requête user : Le premier résultat se présente sous la forme suivante : 
+Test de la requête user :
     "login": "mojombo",
     "id": 1,
     "avatar_url": "https://avatars.githubusercontent.com/u/1?v=3",
@@ -42,10 +43,10 @@ Test de la requête user : Le premier résultat se présente sous la forme suiva
     "type": "User",
     "site_admin": false
 
-On a donc içi récupéré des information sur le premier utilisateur à s'être inscrit (id =1)
+Ces informations concernent le premier utilisateur inscrit sur le site.
 
-Test de la requête repositories : Le premier résultat se présente sous la forme suivante : 
-    Pour commencer on retrouve le même résultat qu'avant pour nous donner l'auteur du repository ensuite on a la structure suivante : 
+Test de la requête repositories : 
+     Même structure et informations que précédemment, avec en plus: 
 
     "private": false,
     "html_url": "https://github.com/mojombo/grit",
@@ -87,12 +88,11 @@ Test de la requête repositories : Le premier résultat se présente sous la for
     "notifications_url": "https://api.github.com/repos/mojombo/grit/notifications{?since,all,participating}",
     "labels_url": "https://api.github.com/repos/mojombo/grit/labels{/name}",
     "releases_url": "https://api.github.com/repos/mojombo/grit/releases{/id}"
+    
     On retrouve donc les informations sur le premier dépôt qui a été effectué sur GitHub.
-    
-    
+   
 
  4. Liste des exemples fonctionnalités pour la requête GET users : Ici toutes les fonctionnalités peuvent être utilisées pour une application mobile ou web - Afficher un utilisateur spécifique (en utilisant son pseudo) - Afficher un utilisateur authentifié - Afficher tout les utilisateurs
-
 Liste des fonctionnalités pour la requête GET repositories : Ici les fonctionnalités qu'on retrouve sur l'application web et mobile.
     - Afficher mes répertoires
     - Afficher le répertoire d'un utilisateur
