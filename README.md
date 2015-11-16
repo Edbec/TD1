@@ -88,22 +88,21 @@ Test de la requête repositories :
     "notifications_url": "https://api.github.com/repos/mojombo/grit/notifications{?since,all,participating}",
     "labels_url": "https://api.github.com/repos/mojombo/grit/labels{/name}",
     "releases_url": "https://api.github.com/repos/mojombo/grit/releases{/id}"
+    On retrouve donc les informations sur le premier dépôt qui a été effectué sur GitHub. 
     
-    On retrouve donc les informations sur le premier dépôt qui a été effectué sur GitHub.
     
-    
-    4. Liste des exemples fonctionnalités pour la requête GET users : 
-         - Afficher un utilisateur spécifique (en utilisant son pseudo) 
-         - Afficher un utilisateur authentifié 
-         - Afficher tout les utilisateurs
+ 4. Liste des exemples fonctionnalités pour la requête GET users : 
+        - Afficher un utilisateur spécifique (en utilisant son pseudo) 
+        - Afficher un utilisateur authentifié 
+        - Afficher tout les utilisateurs
    Liste des fonctionnalités pour la requête GET repositories :
         - Afficher mes répertoires
         - Afficher le répertoire d'un utilisateur
         - Affiher les répertoires d'un utilisateur spécifique (en utilisant son pseudo)
         - Afficher l'organisation des répertoires
         - Afficher tout les répertoires public
-  Liste des fonctionnalités qu'on ne retrouve que sur la version web : 
-         - Afficher la liste des contributeurs d'un répertoire d'un utilisateur
-         - Afficher la liste des langues d'un répertoire d'un utilisateur
-         - Afficher les équipes d'un répertoire d'un utilisateur
-         - Afficher les tags d'un répertoire d'un utilisateur
+   Liste des fonctionnalités qu'on ne retrouve que sur la version web : 
+        - Afficher la liste des contributeurs d'un répertoire d'un utilisateur
+        - Afficher la liste des langues d'un répertoire d'un utilisateur
+        - Afficher les équipes d'un répertoire d'un utilisateur
+        - Afficher les tags d'un répertoire d'un utilisateur
