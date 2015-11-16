@@ -90,8 +90,8 @@ Test de la requête repositories : Le premier résultat se présente sous la for
     On retrouve donc les informations sur le premier dépôt qui a été effectué sur GitHub.
     
     
-    
-    4. Liste des exemples fonctionnalités pour la requête GET users : Ici toutes les fonctionnalités peuvent être utilisées pour une application mobile ou web - Afficher un utilisateur spécifique (en utilisant son pseudo) - Afficher un utilisateur authentifié - Afficher tout les utilisateurs
+
+ 4. Liste des exemples fonctionnalités pour la requête GET users : Ici toutes les fonctionnalités peuvent être utilisées pour une application mobile ou web - Afficher un utilisateur spécifique (en utilisant son pseudo) - Afficher un utilisateur authentifié - Afficher tout les utilisateurs
 
 Liste des fonctionnalités pour la requête GET repositories : Ici les fonctionnalités qu'on retrouve sur l'application web et mobile.
     - Afficher mes répertoires
