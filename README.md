@@ -1,5 +1,5 @@
 # TD1
-1. Git hub :                                                       
+I. Git hub :                                                       
         - Authentification                                   
         - Système de pagination                                
         - Limitation de requêtes pour la page active                 
@@ -12,7 +12,7 @@
         - Ciblage de ville par recherche                        
         - Ciblage de ville par géolocalisation                       
         
-2. - Git hub : *GET + GET /user/repos + GET /repos/:owner/:repo + GET /users/:username/repos + GET /orgs/:org/repos + GET /repositories + GET /repos/:owner/:repo/contributors + GET /repos/:owner/:repo/languages + GET /repos/:owner/:repo/teams + GET /repos/:owner/:repo/branches + GET /repos/:owner/:repo/branches/:branch
+II. - Git hub : *GET + GET /user/repos + GET /repos/:owner/:repo + GET /users/:username/repos + GET /orgs/:org/repos + GET /repositories + GET /repos/:owner/:repo/contributors + GET /repos/:owner/:repo/languages + GET /repos/:owner/:repo/teams + GET /repos/:owner/:repo/branches + GET /repos/:owner/:repo/branches/:branch
 
     *POST
         + POST /user/repos
@@ -22,7 +22,7 @@
         + $ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com (à envoyer dans le header)
         + $ curl https://api.github.com/?access_token=OAUTH-TOKEN ( à envoyer en tant que paramètres)
         
-3. Test des requêtes avec Postman, dans les deux cas on utilise la commande HTTP GET :
+III. Test des requêtes avec Postman, dans les deux cas on utilise la commande HTTP GET :
 
 Test de la requête user :
     "login": "mojombo",
@@ -91,7 +91,7 @@ Test de la requête repositories :
     On retrouve donc les informations sur le premier dépôt qui a été effectué sur GitHub. 
     
                                                                                                            
-4. Liste des exemples fonctionnalités pour la requête GET users :               
+IV. Liste des exemples fonctionnalités pour la requête GET users :               
         - Afficher un utilisateur spécifique (en utilisant son pseudo)           
         - Afficher un utilisateur authentifié                                       
         - Afficher tout les utilisateurs                                                 
