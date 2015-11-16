@@ -91,7 +91,7 @@ Test de la requête repositories :
     On retrouve donc les informations sur le premier dépôt qui a été effectué sur GitHub. 
     
                                                                                                            
- 4. Liste des exemples fonctionnalités pour la requête GET users :               
+4. Liste des exemples fonctionnalités pour la requête GET users :               
         - Afficher un utilisateur spécifique (en utilisant son pseudo)           
         - Afficher un utilisateur authentifié                                       
         - Afficher tout les utilisateurs                                                 
