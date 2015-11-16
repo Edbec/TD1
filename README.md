@@ -1,5 +1,5 @@
 # TD1
-Git hub :                                                       
+1. Git hub :                                                       
         - Authentification                                   
         - Mettre en place une pagination                                
         - Imposer un nombre limiter de requêtes pour la page active                 
