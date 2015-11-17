@@ -11,18 +11,30 @@ I. Git hub :
         - Choix de la langue                                 
         - Ciblage de ville par recherche                        
         - Ciblage de ville par géolocalisation                       
-        
-II. - Git hub : *GET + GET /user/repos + GET /repos/:owner/:repo + GET /users/:username/repos + GET /orgs/:org/repos + GET /repositories + GET /repos/:owner/:repo/contributors + GET /repos/:owner/:repo/languages + GET /repos/:owner/:repo/teams + GET /repos/:owner/:repo/branches + GET /repos/:owner/:repo/branches/:branch
 
-    *POST
-        + POST /user/repos
-        + POST /orgs/:org/repos
+II. L'API utilisée pour la suite du TP est l'API de GitHub.
 
-    *Authentifié (token)
-        + $ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com (à envoyer dans le header)
-        + $ curl https://api.github.com/?access_token=OAUTH-TOKEN ( à envoyer en tant que paramètres)
+III.    *POST
+        - POST /user/repos
+        - POST /orgs/:org/repos
+
+IV.     *GET 
+        - GET /user/repos 
+        - GET /repos/:owner/:repo 
+        - GET /users/:username/repos 
+        - GET /orgs/:org/repos 
+        - GET /repositories 
+        - GET /repos/:owner/:repo/contributors 
+        - GET /repos/:owner/:repo/languages 
+        - GET /repos/:owner/:repo/teams 
+        - GET /repos/:owner/:repo/branches 
+        - GET /repos/:owner/:repo/branches/:branch
+
+V.      *Authentifié (token)
+        - $ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com (à envoyer dans le header)
+        - $ curl https://api.github.com/?access_token=OAUTH-TOKEN ( à envoyer en tant que paramètres)
         
-III. Test des requêtes avec Postman, dans les deux cas on utilise la commande HTTP GET :
+VI. Test des requêtes avec Postman, dans les deux cas on utilise la commande HTTP GET :
 
 Test de la requête user :
     "login": "mojombo",
@@ -46,8 +58,8 @@ Test de la requête user :
 Ces informations concernent le premier utilisateur inscrit sur le site.
 
 Test de la requête repositories : 
-     Même structure et informations que précédemment, avec en plus: 
 
+     Même structure et informations que précédemment, avec en plus: 
     "private": false,
     "html_url": "https://github.com/mojombo/grit",
     "description": "**Grit is no longer maintained. Check out libgit2/rugged.** Grit gives you object oriented read/write access to Git repositories via Ruby.",
@@ -91,7 +103,7 @@ Test de la requête repositories :
     On retrouve donc les informations sur le premier dépôt qui a été effectué sur GitHub. 
     
                                                                                                            
-IV. Liste des fonctionnalités pour la requête GET users :               
+VII. Liste des fonctionnalités pour la requête GET users :               
         - Afficher un utilisateur spécifique (en utilisant son pseudo)           
         - Afficher un utilisateur authentifié                                       
         - Afficher tout les utilisateurs                                                 
