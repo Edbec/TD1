@@ -14,11 +14,11 @@ I. Git hub :
 
 II. L'API utilisée pour la suite du TP est l'API de GitHub.
 
-III.    *POST
+III.    Requêtes POST :
         - POST /user/repos
         - POST /orgs/:org/repos
 
-IV.     *GET 
+IV.     Requêtes GET : 
         - GET /user/repos 
         - GET /repos/:owner/:repo 
         - GET /users/:username/repos 
@@ -27,12 +27,10 @@ IV.     *GET
         - GET /repos/:owner/:repo/contributors 
         - GET /repos/:owner/:repo/languages 
         - GET /repos/:owner/:repo/teams 
-        - GET /repos/:owner/:repo/branches 
-        - GET /repos/:owner/:repo/branches/:branch
 
-V.      *Authentifié (token)
-        - $ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com (à envoyer dans le header)
-        - $ curl https://api.github.com/?access_token=OAUTH-TOKEN ( à envoyer en tant que paramètres)
+V.      Requêtes Authentifié (token) :
+        - $ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com 
+        - $ curl https://api.github.com/?access_token=OAUTH-TOKEN 
         
 VI. Test des requêtes avec Postman, dans les deux cas on utilise la commande HTTP GET :
 
